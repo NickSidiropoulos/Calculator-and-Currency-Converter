@@ -1,4 +1,4 @@
-This is my Interview Assignment at Desquared.
+Interview Assignment
 =============================================
 
 A simple Calculator App that also has a Currency Converter functionality.
