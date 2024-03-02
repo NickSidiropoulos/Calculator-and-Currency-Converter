@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Αριθμομηχανή</string>
+    <string name="back">Πίσω</string>
+    <string name="convert_currency">Μετατροπή Νομίσματος</string>
+    <string name="from">Από</string>
+    <string name="to">Σε</string>
+    <string name="currency_converter">Μετατροπέας</string>
+    <string name="wrong_expression_format">Λάθος Μορφή Πράξης</string>
+    <string name="amount">Ποσό:</string>
+    <string name="backspace">Διαγραφή</string>
+    <string name="reset">Επαναφορά</string>
+    <string name="connection_error">Πρόβλημα Σύνδεσης</string>
+    <string name="conversion_failed" >Αποτυχία Μετατροπής</string>
+</resources>
