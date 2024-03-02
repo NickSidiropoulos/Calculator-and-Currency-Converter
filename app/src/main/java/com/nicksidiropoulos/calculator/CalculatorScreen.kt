@@ -1,7 +1,6 @@
 package com.nicksidiropoulos.calculator
 
 
-import android.content.Context
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -28,7 +27,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -44,7 +42,6 @@ fun CalculatorScreen() {
     var expression by rememberSaveable {
         mutableStateOf("")
     }
-    val context = LocalContext.current
 
     val expressionColorNormal = MaterialTheme.colorScheme.onSurface
     val expressionColorError = Color.Red
@@ -345,7 +342,7 @@ fun CalculatorScreen() {
                         .padding(2.dp),
                     onClick = {
                         try {
-                            expression = evaluateExpression(expression, context)
+                            expression = evaluateExpression(expression)
                             expressionColor = expressionColorNormal
                         }catch (ex: Exception){
                             expressionColor = expressionColorError
@@ -373,7 +370,7 @@ fun addTheOperant(expression: String, operant: String): String{
 }
 
 //Uses the Evaluator library to evaluate the expression into a result
-fun evaluateExpression(expression: String, context: Context): String {
+fun evaluateExpression(expression: String): String {
     return try {
         val result = evaluator.evaluateDouble(expression).toString()
         if (result.endsWith(".0")){
@@ -382,7 +379,7 @@ fun evaluateExpression(expression: String, context: Context): String {
             result
         }
     } catch (ex: Exception){
-        throw Exception(context.getString(R.string.wrong_expression_format))
+        throw Exception("Wrong Expression Format")
     }
 }
 
@@ -390,5 +387,5 @@ fun evaluateExpression(expression: String, context: Context): String {
 @Preview(showSystemUi = true)
 @Composable
 fun CalculatorScreenPr(){
-    CalculatorScreen ()
+    CalculatorScreen()
 }

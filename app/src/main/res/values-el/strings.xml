@@ -6,7 +6,6 @@
     <string name="from">Από</string>
     <string name="to">Σε</string>
     <string name="currency_converter">Μετατροπέας</string>
-    <string name="wrong_expression_format">Λάθος Μορφή Πράξης</string>
     <string name="amount">Ποσό:</string>
     <string name="backspace">Διαγραφή</string>
     <string name="reset">Επαναφορά</string>

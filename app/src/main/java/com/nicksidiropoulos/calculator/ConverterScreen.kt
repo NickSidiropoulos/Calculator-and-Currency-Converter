@@ -1,6 +1,7 @@
 package com.nicksidiropoulos.calculator
 
 
+import android.content.Context
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -50,9 +51,7 @@ import retrofit2.Response
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ConverterScreen() {
-    val dataSource = DataSource()
-    val context = LocalContext.current
+fun ConverterScreen(dataSource: DataSource, context: Context) {
 
     val currencyList = dataSource.currencyList
 
@@ -393,5 +392,7 @@ private fun convertRateToValue(rate: String, selectedToOption: String): String {
 @Preview(showSystemUi = true)
 @Composable
 fun ConverterScreenPr() {
-    ConverterScreen()
+    val dataSource = DataSource()
+    val context = LocalContext.current
+    ConverterScreen(dataSource, context)
 }

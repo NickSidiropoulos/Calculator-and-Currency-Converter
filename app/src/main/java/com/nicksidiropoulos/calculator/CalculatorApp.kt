@@ -14,6 +14,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavDestination.Companion.hierarchy
@@ -22,6 +23,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.nicksidiropoulos.calculator.data.DataSource
 
 data class TabBarItem(
     val title: String,
@@ -32,6 +34,9 @@ data class TabBarItem(
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter", "SuspiciousIndentation")
 @Composable
 fun CalculatorApp() {
+    val dataSource = DataSource()
+    val context = LocalContext.current
+
     val calculatorTab = TabBarItem(
         title = stringResource(id = R.string.app_name),
         selectedIcon = Icons.Filled.Calculate,
@@ -95,7 +100,7 @@ fun CalculatorApp() {
                 CalculatorScreen()
             }
             composable(converterTab.title) {
-                ConverterScreen()
+                ConverterScreen(dataSource, context)
             }
         }
     }
