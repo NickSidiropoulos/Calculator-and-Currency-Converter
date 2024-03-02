@@ -12,6 +12,8 @@ Below are some screenshots of the app. You can download the .apk and try it from
 
 
 
-https://github.com/NickSidiropoulos/Calculator-and-Currency-Converter/assets/12250619/24fe64ed-f3ab-422a-ab0a-f7fe7ddfb72e
+https://github.com/NickSidiropoulos/Calculator-and-Currency-Converter/assets/12250619/45cf80f0-b514-44e6-8850-005020150db0
+
+
 
 
