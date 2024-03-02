@@ -7,6 +7,11 @@ For the currency conversion uses the https://www.frankfurter.app/ api by the Eur
 
 Below are some screenshots of the app. You can download the .apk and try it from the releases section.
 
-![Screenshot_20240302-142447](https://github.com/NickSidiropoulos/Calculator-and-Currency-Converter/assets/12250619/96d93973-d109-4345-bd1c-ade2358d5a3c)
-![Screenshot_20240302-142503](https://github.com/NickSidiropoulos/Calculator-and-Currency-Converter/assets/12250619/6bd623ab-8ac9-4646-8299-a48bb0ecd5cc)
+![Screenshot_20240302-142447](https://github.com/NickSidiropoulos/Calculator-and-Currency-Converter/assets/12250619/abfb49f0-3efa-4e9f-82ce-f43316346cb0)
+![Screenshot_20240302-142503](https://github.com/NickSidiropoulos/Calculator-and-Currency-Converter/assets/12250619/8298bce1-b32d-41ef-9081-92377a8c7e1b)
+
+
+
+https://github.com/NickSidiropoulos/Calculator-and-Currency-Converter/assets/12250619/24fe64ed-f3ab-422a-ab0a-f7fe7ddfb72e
+
 
