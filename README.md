@@ -5,6 +5,7 @@ A simple Calculator App that also has a Currency Converter functionality.
 It is writen in Kotlin and Jetpack Compose and consists of two navigational tabs on the bottom to change between the two functions. 
 Also supports Material You theming according to the user selected wallpaper on the device. 
 For the currency conversion uses the https://www.frankfurter.app/ api by the European Central Bank.
+App supports English and Greek.
 
 You can download the .apk and try it from the releases section.
 
