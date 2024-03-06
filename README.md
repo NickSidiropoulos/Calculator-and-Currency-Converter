@@ -1,4 +1,4 @@
-Interview Assignment
+Interview Assignment Project
 =====================
 
 A simple Calculator App that also has a Currency Converter functionality.
